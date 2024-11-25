@@ -1,0 +1,87 @@
+.lipSyncContent {
+    padding: 2.5rem;
+    padding-left: 18.5rem;
+
+    // Tablet view (adjust as needed, e.g., between 768px and 1024px)
+    @media (max-width: 1024px) {
+        padding-left: 10rem; // Adjust padding-left for tablet view
+        padding: 2.5rem; // Adjust padding for tablet view
+    }
+
+    // Mobile view (less than 768px)
+    @media (max-width: 768px) {
+        padding-left: 1rem; // Adjust padding-left for mobile view
+        padding: 2.5rem; // Adjust padding for mobile view
+    }
+}
+
+.headContent {
+    padding: 2.5rem;
+    padding-left: 27rem;
+
+    // Tablet view (adjust as needed, e.g., between 768px and 1024px)
+    @media (max-width: 1024px) {
+        padding-left: 10rem; // Adjust padding-left for tablet view
+        padding: 2.5rem; // Adjust padding for tablet view
+    }
+
+    // Mobile view (less than 768px)
+    @media (max-width: 768px) {
+        padding-left: 1rem; // Adjust padding-left for mobile view
+        padding: 2.5rem; // Adjust padding for mobile view
+    }
+}
+
+
+.realtimeContent {
+    padding: 2.5rem;
+    padding-left: 41rem;
+
+    // Tablet view (adjust as needed, e.g., between 768px and 1024px)
+    @media (max-width: 1024px) {
+        padding-left: 10rem; // Adjust padding-left for tablet view
+        padding: 2.5rem; // Adjust padding for tablet view
+    }
+
+    // Mobile view (less than 768px)
+    @media (max-width: 768px) {
+        padding-left: 1rem; // Adjust padding-left for mobile view
+        padding: 2.5rem; // Adjust padding for mobile view
+    }
+}
+
+
+.highContent {
+    padding: 2.5rem;
+    padding-left: 51rem;
+
+    // Tablet view (adjust as needed, e.g., between 768px and 1024px)
+    @media (max-width: 1024px) {
+        padding-left: 10rem; // Adjust padding-left for tablet view
+        padding: 2.5rem; // Adjust padding for tablet view
+    }
+
+    // Mobile view (less than 768px)
+    @media (max-width: 768px) {
+        padding-left: 1rem; // Adjust padding-left for mobile view
+        padding: 2.5rem; // Adjust padding for mobile view
+    }
+}
+
+.userContent {
+    padding: 2.5rem;
+    padding-left: 62rem;
+
+    // Tablet view (adjust as needed, e.g., between 768px and 1024px)
+    @media (max-width: 1024px) {
+        padding-left: 10rem; // Adjust padding-left for tablet view
+        padding: 2.5rem; // Adjust padding for tablet view
+    }
+
+    // Mobile view (less than 768px)
+    @media (max-width: 768px) {
+        padding-left: 1rem; // Adjust padding-left for mobile view
+        padding: 2.5rem; // Adjust padding for mobile view
+    }
+}
+

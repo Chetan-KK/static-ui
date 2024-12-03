@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import { FaBars, FaXRay } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
+import Brush from "./icons/brush";
+import Plugins from "./icons/plugins";
+import Cpu from "./icons/cpu";
+import Wifi from "./icons/wifi";
+import Doller from "./icons/doller";
 
 const DashboardContainer = ({ children, className, ...props }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const buttons = [
-    { src: "/pluginPage/icons/plugins.svg", label: "All Plugins" },
-    { src: "/pluginPage/icons/wifi.svg", label: "Imagen" },
-    { src: "/pluginPage/icons/brush.svg", label: "Videofusion" },
-    { src: "/pluginPage/icons/cpu.svg", label: "Audiogen" },
-    { src: "/pluginPage/icons/doller.svg", label: "3Dverse" },
+    { icon: <Plugins className="size-6" />, label: "All Plugins" },
+    { icon: <Wifi className="size-6" />, label: "Imagen" },
+    { icon: <Brush className="size-6" />, label: "Videofusion" },
+    { icon: <Cpu className="size-6" />, label: "Audiogen" },
+    { icon: <Doller className="size-6" />, label: "3Dverse" },
   ];
 
   return (
@@ -49,7 +54,7 @@ const DashboardContainer = ({ children, className, ...props }) => {
               }
             }
           >
-            <img src={button.src} alt="" /> {button.label}
+            {button.icon} {button.label}
           </button>
         ))}
       </div>

@@ -1,35 +1,42 @@
 import React from "react";
 import images from "../../images";
-import Icon from "./icons";
+import Icon from "./icons/icon";
+import Arrows from "./icons/arrows";
+import Settings from "./icons/settings";
+import PenTool from "./icons/pentool";
+import Devices from "./icons/devices";
+import Happy from "./icons/happy";
+import Refresh from "./icons/refresh";
+import Export from "./icons/export";
 
 const cardData = [
   {
-    image: "/pluginPage/icons/settings.svg",
+    icon: <Settings className="h-8 w-8" />,
     heading: "Easy Integration",
     subheading: "Quickly install plugins that work with your apps.",
   },
   {
-    image: "/pluginPage/icons/pentool.svg", // replace with actual image
+    icon: <PenTool className="h-8 w-8" />,
     heading: "AI-Powered Creativity",
     subheading: "AI tools create professional content with ease.",
   },
   {
-    image: "/pluginPage/icons/devices.svg", // replace with actual image
+    icon: <Devices className="h-8 w-8" />,
     heading: "Wide Compatibility",
     subheading: "Plugins available for many popular software applications.",
   },
   {
-    image: "/pluginPage/icons/arrows.svg", // replace with actual image
+    icon: <Arrows className="h-8 w-8" />,
     heading: "Efficient Workflow",
     subheading: "Streamline tasks and focus on your ideas.",
   },
   {
-    image: "/pluginPage/icons/happy.svg", // replace with actual image
+    icon: <Happy className="h-8 w-8" />,
     heading: "User-Friendly Interface",
     subheading: "Enjoy a simple design that anyone can use.",
   },
   {
-    image: "/pluginPage/icons/refresh.svg", // replace with actual image
+    icon: <Refresh className="h-8 w-8" />,
     heading: "Regular Updates",
     subheading: "Get new features and improvements automatically over time.",
   },
@@ -64,19 +71,16 @@ const PluginPage = () => {
                 AI Plugins
               </div>
             </div>
-            <div className="text-5xl mb-4 font-black leading-[1.2] w-[455px]">
-              Create Amazing Content with Our AI Plugins
+            <div className="text-2xl sm:text-4xl mb-4 font-black leading-[1.2] sm:w-[455px]">
+              AI Plugins to Simplify & Speed Up your content creation journey
             </div>
             <p className="mb-5 text-sm text-gray-500">
-              Easily create great content with AI plugins for your favorite
-              apps.
+              Produce high-quality media across multiple platform with our
+              intuitive AI Plugins
             </p>
             <div className="flex space-x-6">
-              <div className="flex lg:items-start flex-row gap-3  lg:justify-start">
-                <div
-                  style={{ backgroundColor: "#005CF0", width: "150px" }}
-                  className="text-white text-xs font-bold py-2 px-3 rounded-full flex justify-center items-center cursor-pointer"
-                >
+              <div className="flex lg:items-start flex-row gap-3 flex-wrap lg:justify-start">
+                <div className="text-white text-xs bg-[#005CF0] hover:bg-[#005CF0]/80 w-36 font-bold py-2 px-3 rounded-full flex justify-center items-center cursor-pointer">
                   <div>Watch Video</div>
                   <img
                     src={images.playCircle}
@@ -85,10 +89,7 @@ const PluginPage = () => {
                   />
                 </div>
 
-                <div
-                  className="bg-gray-800 text-white text-xs font-bold py-2 px-3 rounded-full flex justify-center items-center cursor-pointer"
-                  style={{ width: "150px" }}
-                >
+                <div className="bg-gray-800 hover:bg-gray-700 text-white text-xs font-bold py-2 px-3 rounded-full flex justify-center items-center cursor-pointer w-36 ">
                   <img
                     src={images.basketball}
                     className="pr-2"
@@ -102,7 +103,9 @@ const PluginPage = () => {
         </div>
         <div className="mt-8 flex justify-center">
           <img
-            src={"/pluginPage/hero.svg"}
+            src={
+              "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/kVLCflULnnEe3IeuHx5QPt8EVrRgUZ-metaaGVyby5wbmc=-.png"
+            }
             alt="API Graphic"
             // style={{ height: "240px" }}
           />
@@ -114,31 +117,28 @@ const PluginPage = () => {
         style={{ background: "#F9F9F9" }}
       >
         <div className="flex flex-col justify-center pt-11">
-          <div className="text-4xl text-black font-bold text-center">
+          <div className="text-2xl sm:text-4xl text-black font-bold text-center">
             What We Offer
           </div>
-          <div className="text-base pt-2 text-center text-black/70">
+          <div className="text-sm sm:text-base pt-2 text-center text-black/70">
             Our AI plugins easily create amazing images, audio, text, and more
             for apps.
           </div>
         </div>
-        <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:px-40 px-20 justify-center">
+        <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:px-40 px-2 sm:px-20 justify-center">
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="p-4 rounded-3xl flex flex-col border border-[#E5E7EB] bg-white"
+              className="p-4 rounded-3xl flex flex-col border border-[#E5E7EB] bg-white hover:shadow-lg transition-all"
             >
-              <div className="flex justify-between items-center">
-                <img
+              <div className="flex justify-between items-start mb-10">
+                {/* <img
                   src={card.image}
                   alt={card.heading}
-                  className="h-10 w-10 mb-10"
-                />
-                <img
-                  src={"/pluginPage/icons/export.svg"}
-                  alt="Export"
-                  className="h-6 w-6 mb-10"
-                />
+                  className="h-10 w-7 mb-10"
+                /> */}
+                {card.icon}
+                <Export className="size-5 text-[#005CF0]" />
               </div>
               <div className="font-bold text-base text-black">
                 {card.heading}
@@ -155,17 +155,14 @@ const PluginPage = () => {
         style={{ backgroundColor: "#F9F9F9" }}
       >
         <div className="flex flex-col items-center justify-center lg:flex-row bg-white rounded-3xl ">
-          <div className="p-16 md:p-16">
+          <div className="py-10 px-5 md:p-16">
             <div className="font-bold" style={{ color: "#00D1AF" }}>
               How It Works
             </div>
-            <h2 className="text-3xl font-bold mb-4 leading-10">
+            <h2 className="text-xl sm:text-3xl font-bold mb-4 leading-10">
               AI plugins for popular apps.
             </h2>
-            <ol
-              className="list-inside space-y-5 text-xs"
-              style={{ width: "350px" }}
-            >
+            <ol className="list-inside space-y-5 text-xs">
               {stepsData.map((step, index) => (
                 <li key={index}>
                   <h2 className="font-bold text-base text-black">
@@ -179,28 +176,50 @@ const PluginPage = () => {
             </ol>
           </div>
           <div>
-            <img className="max-w-96" src={"/pluginPage/how-it-works.png"} />
+            <img
+              className="w-full rounded-2xl lg:max-w-96"
+              src={
+                "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/T2hCOttcdtuJrJhfoOkHlXo7wQFCxL-metaaG93LWl0LXdvcmtzLnBuZw==-.png"
+              }
+            />
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center mt-16 py-10 px-12 bg-[#F9F9F9]">
-        <div
-          style={{ fontSize: "36px" }}
-          className="font-extrabold text-center"
-        >
+      <div className="flex flex-col justify-center pt-16 py-10 px-12 bg-[#F9F9F9]">
+        <div className="text-2xl sm:text-4xl font-extrabold text-center">
           Supported Applications
         </div>
-        <div className="pt-2 text-lg text-center text-gray-400">
+        <div className="pt-2 text-sm sm:text-base text-center text-gray-400">
           Our plugins are designed to work with the most popular content
           creation software:
         </div>
       </div>
-      <div className="flex items-center gap-28 flex-wrap my-10 justify-center">
-        <img className="h-20" src="/pluginPage/apps/blender.png" alt="" />
-        <img className="h-20" src="/pluginPage/apps/ae.png" alt="" />
-        <img className="h-20" src="/pluginPage/apps/pr.png" alt="" />
-        <img className="h-20" src="/pluginPage/apps/unreal.png" alt="" />
-        <img className="h-20" src="/pluginPage/apps/v.png" alt="" />
+      <div className="flex items-center gap-28 flex-wrap py-10 justify-center bg-[#F9F9F9]">
+        <img
+          className="h-10 sm:h-20"
+          src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/rajp80MB5x6wamSQudY0pl6hmVlC5g-metaYmxlbmRlci5wbmc=-.png"
+          alt=""
+        />
+        <img
+          className="h-10 sm:h-20"
+          src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/SLafjfqp36jGuQWZ820iBP5dCstnVA-metaYWUucG5n-.png"
+          alt=""
+        />
+        <img
+          className="h-10 sm:h-20"
+          src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/I1FA6QLJZJrEZzBJXknh4isRxjAd8m-metacHIucG5n-.png"
+          alt=""
+        />
+        <img
+          className="h-10 sm:h-20"
+          src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/NmJishr9vjcw6XDhHcvf16Dw8iSjiy-metadW5yZWFsLnBuZw==-.png"
+          alt=""
+        />
+        <img
+          className="h-10 sm:h-20"
+          src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/O4tkdaoXJYvo7Eq4wHFgByJnuAHE8p-metadi5wbmc=-.png"
+          alt=""
+        />
       </div>
     </div>
   );

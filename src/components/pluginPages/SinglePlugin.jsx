@@ -12,21 +12,21 @@ import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
 const SinglePlugin = () => {
   const pluginDetails = [
     {
-      src: "/pluginPage/dashboardIcons/ae.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/cN8VNj3qSEX0CAhzrMj0vzjYPB1toe-metaYWUucG5n-.png",
       title: "Adobe After Effects: Image",
       downloads: 23,
       description:
         "Elevate your visual storytelling with our AI-powered plugins",
     },
     {
-      src: "/pluginPage/dashboardIcons/blender.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/Y1umKYBVOIm8HUHoEsNXXwNSTFRxSS-metaYmxlbmRlci5wbmc=-.png",
       title: "Blender: 3D Generation",
       downloads: 23,
       description:
         "Elevate your visual storytelling with our AI-powered image generate",
     },
     {
-      src: "/pluginPage/dashboardIcons/v.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/fnKYU0bwNnLjxbSqOaijmwmanrBms8-metadi5wbmc=-.png",
       title: "Sony Vegas: Video Generation",
       downloads: 23,
       description:
@@ -39,7 +39,11 @@ const SinglePlugin = () => {
       <div className="md:p-5">
         <div className="flex justify-between md:flex-row flex-col gap-5 items-start md:items-center mb-7">
           <div className="flex items-center gap-5">
-            <img src="/pluginPage/apps/ae.png" className="h-12" alt="" />
+            <img
+              src="https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/SLafjfqp36jGuQWZ820iBP5dCstnVA-metaYWUucG5n-.png"
+              className="h-12"
+              alt=""
+            />
 
             <div className="space-y-1">
               <h1 className="font-bold text-xl">
@@ -134,13 +138,12 @@ const SinglePlugin = () => {
         <div className="mt-14 mb-7">
           <h1 className="font-bold text-xl mb-5">Overview</h1>
           <p>
-            Elevate your visual storytelling with our AI-powered image
-            generation plugin for Adobe After Effects. Designed to enhance your
-            creative workflow, this plugin seamlessly integrates with After
-            Effects, allowing you to generate stunning, high-resolution images
-            directly within your projects. Whether you need realistic scenes,
-            abstract designs, or custom backgrounds, our AI-driven tool delivers
-            with precision and speed.
+            Make your every visual stand out with our AI-powered image
+            generation plugin for Adobe After Effects. Build from a creator
+            first perspective to elevate and fast track your content creation
+            process. This innovative tool seamlessly integrates with After
+            Effects, allowing you to craft stunning, high-resolution images
+            directly within your projects.
           </p>
         </div>
         <hr />

@@ -166,7 +166,7 @@ const ThreedVerse = () => {
             <img
               src={images.threedverseSideImg}
               alt="API Graphic"
-              // style={{ height: "240px" }}
+            // style={{ height: "240px" }}
             />
           </div>
         </div>
@@ -223,20 +223,18 @@ const ThreedVerse = () => {
             {tabs.map((tab) => (
               <div
                 key={tab.title}
-                className={`flex flex-col items-center cursor-pointer transition ${
-                  activeTab === tab.title ? "font-bold" : ""
-                }`}
+                className={`flex flex-col items-center cursor-pointer transition ${activeTab === tab.title ? "font-bold" : ""
+                  }`}
                 style={{
                   color: `${activeTab === tab.title ? "#000000" : "#808080"}`,
                 }}
                 onClick={() => setActiveTab(tab.title)}
               >
                 <div
-                  className={`mb-2 ${
-                    activeTab === tab.title
+                  className={`mb-2 ${activeTab === tab.title
                       ? ` ${isBouncing ? "animate-bounce" : ""}`
                       : `""`
-                  }`}
+                    }`}
                   onClick={handleClick}
                 >
                   {/* Change icon based on active state */}
@@ -498,7 +496,7 @@ const ThreedVerse = () => {
                 <div
                   // className="pt-10"
                   className="flex justify-end items-end pt-2"
-                  // style={{ height: "132px" }}
+                // style={{ height: "132px" }}
                 >
                   <img src={images.setup3D} />
                 </div>
@@ -515,11 +513,11 @@ const ThreedVerse = () => {
                 </div>
                 <div
                   className="flex justify-center items-center"
-                  // style={{ height: "132px" }}
+                // style={{ height: "132px" }}
                 >
                   <img
                     src={images.apiCall}
-                    // style={{ height: "80px" }}
+                  // style={{ height: "80px" }}
                   />
                 </div>
               </div>

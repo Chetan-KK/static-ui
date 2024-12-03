@@ -4,35 +4,35 @@ import DashboardContainer from "./dashboardContainer";
 const PluginDashboard = () => {
   const pluginDetails = [
     {
-      src: "/pluginPage/dashboardIcons/ae.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/cN8VNj3qSEX0CAhzrMj0vzjYPB1toe-metaYWUucG5n-.png",
       title: "Adobe After Effects: Image",
       downloads: 23,
       description:
         "Elevate your visual storytelling with our AI-powered Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugit reprehenderit quod, molestiae esse, inventore cupiditate earum aliquid assumenda libero possimus, ducimus quasi numquam eligendi voluptates saepe atque maxime ipsum nemo perferendis veniam ad perspiciatis? Temporibus, expedita repellat sapiente ut aliquam quos eaque aspernatur mollitia facere fugiat consequatur rerum eius! Porro, iste. Unde beatae veniam eveniet fugiat, in facilis! Nulla quasi corrupti architecto necessitatibus non consequuntur quo et temporibus, eius excepturi error assumenda asperiores quae ipsa. Voluptates fuga ea qui dolore non blanditiis exercitationem, sunt, voluptatibus quaerat possimus facere, esse voluptas? Tenetur libero quis facilis alias voluptas earum tempora voluptate.",
     },
     {
-      src: "/pluginPage/dashboardIcons/blender.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/Y1umKYBVOIm8HUHoEsNXXwNSTFRxSS-metaYmxlbmRlci5wbmc=-.png",
       title: "Blender: 3D Generation",
       downloads: 23,
       description:
         "Elevate your visual storytelling with our AI-powered image...",
     },
     {
-      src: "/pluginPage/dashboardIcons/v.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/fnKYU0bwNnLjxbSqOaijmwmanrBms8-metadi5wbmc=-.png",
       title: "Sony Vegas: Video Generation",
       downloads: 23,
       description:
         "Elevate your visual storytelling with our AI-powered image...",
     },
     {
-      src: "/pluginPage/dashboardIcons/unreal.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/aGe4JOEQcOHTBf8HvMJIaQNu9vEnLm-metadW5yZWFsLnBuZw==-.png",
       title: "Unreal Engine: 3D Generation",
       downloads: 23,
       description:
         "Elevate your visual storytelling with our AI-powered image...",
     },
     {
-      src: "/pluginPage/dashboardIcons/pr.png",
+      src: "https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/livewire-tmp/HZjL1HqrHW1uVQpjxZuF6zAffT7UxN-metacHIucG5n-.png",
       title: " Adobe Premier Pro: Image G...",
       downloads: 23,
       description:
